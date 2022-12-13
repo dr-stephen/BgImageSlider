@@ -1,0 +1,44 @@
+:root {
+  --mainWhite: #f2fdff;
+  --mainGrey: #707070;
+}
+.max-height {
+  min-height: 100vh;
+}
+body {
+  background: var(--mainWhite);
+}
+.img-container {
+  min-height: 60vh;
+  background: url("../../../public/images/Paintings/semiAbstract/NorthernArch3.jpg") center/cover fixed no-repeat;
+  border: 0.2rem solid var(--mainGrey);
+  border-radius: 0.5rem;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .img-container {
+    min-height: 80vh;
+  }
+}
+
+.btn-left, .btn-right {
+  position: absolute;
+  top: 50%;
+  background: var(--mainGrey);
+  color: var(--mainWhite) !important;
+  font-size: 1.2rem;
+  border: 0.2rem solid var(--mainGrey);
+}
+.btn-left {
+	left: 0;
+	transform: translate(-50%, -50%);
+}
+.btn-right{
+	right: 0;
+	transform: translate(50%, -50%);
+}
+.btn-left:hover, .btn-right:hover {
+  border-color: var(--mainGrey);
+  background: var(--mainWhite);
+  color: var(--mainGrey) !important;
+}
